@@ -8,7 +8,7 @@ function ListNode(val, next) {
   this.next = next === undefined ? null : next;
 }
 
-/**
+/** had help from https://www.youtube.com/channel/UCYPxjfbEI192KWqU67I8c0g/videos
  * @param {ListNode} l1
  * @param {ListNode} l2
  * @return {ListNode}
@@ -41,3 +41,35 @@ function addTwoNumbers(l1, l2) {
 const l1 = new ListNode(2, new ListNode(8, new ListNode(3, null)));
 const l2 = new ListNode(3, new ListNode(4, new ListNode(6, null)));
 console.log(addTwoNumbers(l1, l2));
+
+/** the fastest solution from LeetCode
+ * @param {ListNode} l1
+ * @param {ListNode} l2
+ * @return {ListNode}
+ */
+var addTwoNumbersFastest = function (l1, l2) {
+  return addNodeList(l1, l2);
+};
+
+/**
+ * @param {ListNode} l1
+ * @param {ListNode} l2
+ * @param {number} extra
+ * @return {ListNode}
+ */
+var addNodeList = function (l1, l2, extra = 0) {
+  if (l1 === null && l2 === null && extra === 0) {
+    return null;
+  }
+
+  var n1 = l1 !== null ? l1.val : 0;
+  var n2 = l2 !== null ? l2.val : 0;
+  var total = n1 + n2 + extra;
+
+  var digit = total % 10;
+  var newExtra = (total - digit) / 10;
+  var next1 = l1 !== null ? l1.next : null;
+  var next2 = l2 !== null ? l2.next : null;
+
+  return new ListNode(digit, addNodeList(next1, next2, newExtra));
+};
