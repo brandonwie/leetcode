@@ -7,6 +7,12 @@
 - Hence, not all solutions are mine, and I will leave comments if it's not solely mine.
 - `README.md` wil be written in 'lastest to earliest' order
 
+### #4. Median of Two Sorted arrays (12/30/2021)
+
+The fastest solution is almost the same as my solution, but I don't know why it runs way slower than the one.<br>
+`Array.sort((a,b)=>a-b)` was kind of a key to this solution because `sort()` doesn't apply to negative numbers by itself.<br>
+Another solution is to implement `sort()` with a custom function.
+
 ### #3. Longest Substring Without Repeating Characters (12/29/2021)
 
 Using `Set` was my solution, but the fastest solution using an array and slice method was brilliant.
