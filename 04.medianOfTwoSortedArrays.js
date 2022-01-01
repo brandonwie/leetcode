@@ -27,53 +27,39 @@ const findMedianWithSortFunction = (nums1, nums2) => {
 
 // using a custom sort method
 function findMedianSortedArrays(nums1, nums2) {
-  // binary search algorithm
   if (nums1.length > nums2.length) return findMedianSortedArrays(nums2, nums1);
-  let total = nums1.length + nums2.length;
-  // calculate half value of merged array (e.g. 13 => half === 6)
-  let half = Math.floor((nums1.length + nums2.length) / 2);
+  let len1 = nums1.length;
+  let len2 = nums2.length;
+  let total = len1 + len2;
+  let half = Math.floor(total / 2);
 
-  //* 1. set pointers for the smaller array to find the median of it
-  // by doing so, no need to calculate the median of the larger array
-  // just need to calculate half - smaller array's half (this will be )
-  let leftPointer = 0;
-  let rightPointer = nums1.length - 1; // end pointer starts at the index as the same as the last index of the smaller array
+  let p1 = 0;
+  let p2 = len1 - 1;
 
-  while (leftPointer <= rightPointer) {
-    // left partition for the smaller array (*mid index)
-    let smallLeftPartition = Math.floor((leftPointer + rightPointer) / 2);
-    console.log('smaller left partition:', smallLeftPartition);
-    // right partition for the larger array (what's left for the larger array)
-    let largeLeftPartition = half - smallLeftPartition - 2;
-    console.log('larger left partition:', largeLeftPartition);
-    //! think finding the median of merged array as partitioning with having left and right the same size (if it's even)
-    // compare both left partition's far right with corresponding right partition's far left
-    let maxLeftSmall =
-      smallLeftPartition < 0 ? -Infinity : nums1[smallLeftPartition];
-    let maxLeftLarge =
-      largeLeftPartition < 0 ? -Infinity : nums2[largeLeftPartition];
-    let minRightSmall =
-      smallLeftPartition >= nums1.length
-        ? Infinity
-        : nums1[smallLeftPartition + 1];
-    let minRightLarge =
-      largeLeftPartition >= nums2.length
-        ? Infinity
-        : nums2[largeLeftPartition + 1];
-    // the easiest case: both far right values of left partitions are smaller then corresponding right partitions' minimum
-    if (maxLeftSmall <= minRightLarge && maxLeftLarge <= minRightSmall) {
-      // compare which one is larger between two max values
-      const maxLeftPartition = Math.max(maxLeftSmall, maxLeftLarge);
-      if (total % 2 === 1) return maxLeftPartition;
-      return (maxLeftPartition + Math.min(minRightSmall, minRightLarge)) / 2;
-      // larger left partition's max value is BIGGER than the smaller right partition's min value
-      //! move left pointer to mid + 1
-    } else if (maxLeftSmall <= minRightLarge)
-      leftPointer = smallLeftPartition + 1;
-    // opposite to the above case
-    //! move left pointer to mid -1
-    else rightPointer = smallLeftPartition - 1;
+  while (p1 <= p2 + 1) {
+    let m1 = Math.floor((p1 + p2) / 2); // use pointer to calculate
+    let m2 = half - m1 - 2;
+    console.log(m1, m2);
+    // check if left most values are within index range
+    let maxL1 = m1 >= 0 ? nums1[m1] : -Infinity;
+    let minL1 = m1 + 1 < len1 ? nums1[m1 + 1] : Infinity;
+    let maxL2 = m2 >= 0 ? nums2[m2] : -Infinity;
+    let minL2 = m2 + 1 < len2 ? nums2[m2 + 1] : Infinity;
+    console.log('maxL1', maxL1, 'minL1', minL1, 'maxL2', maxL2, 'minL2', minL2);
+    if (maxL1 <= minL2 && maxL2 <= minL1) {
+      let maxLp = Math.max(maxL1, maxL2);
+      let minRp = Math.min(minL1, minL2);
+      if (total % 2 === 0) return (maxLp + minRp) / 2;
+      return minRp;
+    } else if (maxL1 < minL2) {
+      console.log('adjusting left pointer...');
+      p1 = m1 + 1;
+    } else {
+      console.log('adjusting right pointer...');
+      p2 = m1 - 1;
+    }
   }
 }
 
-console.log(findMedianSortedArrays([1, 2], [3, 4]));
+console.log(findMedianSortedArrays([1, 2, 3, 4], [7]));
+// 1,2,3,4,5,6,7
