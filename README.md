@@ -9,26 +9,16 @@
 
 ### #4. [HARD] Median of Two Sorted arrays (12/30/2021)
 
+took 3 days to fully understand (still need more time to understand in a firm way)
 (update 01/01/2022)<br>
 
-1. we want the size of the left partition as roughly the half of the size of the merged array
-2. the most intuitive way of doing this is by taking half of each array
-3. once you find the middle index of the smaller array by,
+#### important things
 
-   ```javascript
-   let smallerArrayMidIndex = Math.floor((startIndex + endIndex) / 2);
-   ```
-
-4. You can repeat the same process for the larger array, but you don't need to calculate the amount that you need to take from bigger array because,
-
-   ```javascript
-   // this will do the job
-   let largerArrayMidIndex = half - smallerArrayMidIndex;
-   ```
-
-5. Compare one array to another because each array is sorted; therefore, no need to order anything within each array (compare )
-
-6.
+- Use smaller array (if exists) to move pointers less
+- Concept of left/right pointers on smaller array (left pointer only move to the right and vice-versa)
+- Using `-Infinity` nad `Infinity` to indicate there's no more space for pointers to move
+- How to setup mid point matters for the entire code due to indices (e.g. use length or length -1)
+- Think about the locations of pointers before and after moving while setting up the pointers using mid positions
 
 The fastest solution is almost the same as my solution, but I don't know why it runs way slower than the one.<br>
 `Array.sort((a,b)=>a-b)` was kind of a key to this solution because `sort()` doesn't apply to negative numbers by itself.<br>
@@ -38,12 +28,12 @@ Another solution is to implement `sort()` with a custom function.
 
 Using `Set` was my solution, but the fastest solution using an array and slice method was brilliant.
 
-### #2 Add Two Numbers
+### #2. Add Two Numbers
 
 It was helpful to understand the question with knowing the ListNode in Java.<br>
 Using less functions will help to decrease the time it takes.
 
-### #1 Two Sum
+### #1. Two Sum
 
 the fastest solutions and the popular ones are using Objects(HashMap style in Java) and one for-loop
 

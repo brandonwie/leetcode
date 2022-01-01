@@ -26,6 +26,7 @@ const findMedianWithSortFunction = (nums1, nums2) => {
 };
 
 // using a custom sort method
+// learned and get inspired from https://www.youtube.com/watch?v=q6IEA26hvXc&t=730s&ab_channel=NeetCode
 function findMedianSortedArrays(nums1, nums2) {
   if (nums1.length > nums2.length) return findMedianSortedArrays(nums2, nums1);
   let len1 = nums1.length;
