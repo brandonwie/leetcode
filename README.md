@@ -2,7 +2,7 @@
 
 ## Disclaimer
 
-- Not sure if I can keep "three LeetCode problems per week", but I will do my best.
+- Not sure if I can keep "two LeetCode problems per week", but I will do my best.
 - This repo will not only contain my solutions, but also solutions that meet my preferences, or those are recorded as the fastest on LeetCode.
 - Hence, not all solutions are mine, and I will leave comments if it's not solely mine.
 - `README.md` wil be written in 'lastest to earliest' order
