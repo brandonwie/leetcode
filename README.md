@@ -7,6 +7,21 @@
 - Hence, not all solutions are mine, and I will leave comments if it's not solely mine.
 - `README.md` wil be written in 'lastest to earliest' order
 
+### #6. Zigzag Converstion
+
+- more dislikes than likes : I wonder why 🤷🏻‍♂️... not for real use-cases?
+- this problem was tricky because I had to draw the zigzag with given strings to find patterns (well frankly, I got the answer from [YouTube](https://www.youtube.com/watch?v=Q2Tw6gcVEwc&t=456s&ab_channel=NeetCode))
+- **ZIG line**(which contains letters in all rows - \*last row might not have letters for all rows)
+  - distance to the next letter in the ZIG line: `increment = 2 * (numRows - 1)`
+  - for instance, with 4 numRows, to reach the next ZIG line char, it takes 6 moves (draw it if you want the proof)
+- **ZAG line** (where the each letter head to the first row diagonally)
+  - check if ZAG line char is inbound
+  - after adding ZIG line char, if the current row is not the first or the last row, and inbound
+  - `i + increment - (2 * row)`: go back `2 * row` from the next ZIG line char to get to the ZAG lien char
+- You'll get the idea if you actually draw a zigzag pattern that has 4 rows using a random string (at least with 13-15 chars)
+
+### TODO notes for longest palindrome question
+
 ### #4. [HARD] Median of Two Sorted arrays (12/30/2021)
 
 took 3 days to fully understand (still need more time to understand in a firm way)

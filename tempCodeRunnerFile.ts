@@ -1,0 +1,1 @@
+console.log(s[startIndex + numRows + (numRows - 2)]);
