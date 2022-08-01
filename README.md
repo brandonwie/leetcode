@@ -7,6 +7,15 @@
 - Hence, not all solutions are mine, and I will leave comments if it's not solely mine.
 - `README.md` wil be written in 'lastest to earliest' order
 
+### #7. Reverse Integer
+
+- convert to string
+- separate '-' if any exists and save it as prefix
+- do reversed for loop and concat each digits
+- remove zeros if any exists until it doesn't appear
+- concat with the prefix
+- convert to number
+
 ### #6. Zigzag Converstion
 
 - more dislikes than likes : I wonder why 🤷🏻‍♂️... not for real use-cases?
