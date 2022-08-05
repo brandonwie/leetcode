@@ -24,7 +24,7 @@ function myAtoi(s: string): number {
     }
     break;
   }
-  // to remove zeros before concatonation
+  // to remove zeros before concatenation
   let result = Number(prefix + String(Number(numberStr)));
   if (result > 2 ** 31 - 1) result = 2 ** 31 - 1;
   if (result < (-2) ** 31) result = (-2) ** 31;

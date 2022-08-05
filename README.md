@@ -7,6 +7,18 @@
 - Hence, not all solutions are mine, and I will leave comments if it's not solely mine.
 - `README.md` wil be written in 'lastest to earliest' order
 
+### #8. String to Integer
+
+JS file runs way faster then the TS one due to (probably) the unnecessary loops and conditionals; However, I left as it is (didn't amend it) to see my thought progress later in the future, one interesting thing is that actually later I could think of a better algorithm to solve it, and it went from 11% up to 80% faster runtime.
+
+- trim input string
+- check if one of the signs (+, -) exists, assign it separately
+- loop and concat numbers including '0'
+  - 0 has to be handled separately while using `Boolean` and `Number` together, because 0 will throw false with Boolean causing unexpected behavior
+- if the number part is an empty string (= no number following), return 0
+- `Number(-000024)` for instance, will return `-24`. Therefore, there's no need to remove those front zeros before concatenate with signs if one exists, because `Number` function will automatically remove it for you
+- basic condition checks are not mentioned here
+
 ### #7. Reverse Integer
 
 - convert to string
