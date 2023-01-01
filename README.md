@@ -7,26 +7,29 @@
 - Hence, not all solutions are mine, and I will leave comments if it's not solely mine.
 - `README.md` wil be written in 'lastest to earliest' order
 
-### #8. String to Integer
+### #1. Two Sum
 
-JS file runs way faster then the TS one due to (probably) the unnecessary loops and conditionals; However, I left as it is (didn't amend it) to see my thought progress later in the future, one interesting thing is that actually later I could think of a better algorithm to solve it, and it went from 11% up to 80% faster runtime.
+the fastest solutions and the popular ones are using Objects(HashMap style in Java) and one for-loop
 
-- trim input string
-- check if one of the signs (+, -) exists, assign it separately
-- loop and concat numbers including '0'
-  - 0 has to be handled separately while using `Boolean` and `Number` together, because 0 will throw false with Boolean causing unexpected behavior
-- if the number part is an empty string (= no number following), return 0
-- `Number(-000024)` for instance, will return `-24`. Therefore, there's no need to remove those front zeros before concatenate with signs if one exists, because `Number` function will automatically remove it for you
-- basic condition checks are not mentioned here
+```
 
-### #7. Reverse Integer
+```
 
-- convert to string
-- separate '-' if any exists and save it as prefix
-- do reversed for loop and concat each digits
-- remove zeros if any exists until it doesn't appear
-- concat with the prefix
-- convert to number
+### #2. Add Two Numbers
+
+It was helpful to understand the question with knowing the ListNode in Java.<br>
+Using less functions will help to decrease the time it takes.
+
+### #3. Longest Substring Without Repeating Characters (12/29/2021)
+
+Using `Set` was my solution, but the fastest solution using an array and slice method was brilliant.
+
+### #4. [HARD] Median of Two Sorted arrays (12/30/2021)
+
+took 3 days to fully understand (still need more time to understand in a firm way)
+(update 01/01/2022)
+
+<br />
 
 ### #6. Zigzag Converstion
 
@@ -43,11 +46,6 @@ JS file runs way faster then the TS one due to (probably) the unnecessary loops 
 
 ### TODO notes for longest palindrome question
 
-### #4. [HARD] Median of Two Sorted arrays (12/30/2021)
-
-took 3 days to fully understand (still need more time to understand in a firm way)
-(update 01/01/2022)<br>
-
 #### important things
 
 - Use smaller array (if exists) to move pointers less
@@ -56,23 +54,29 @@ took 3 days to fully understand (still need more time to understand in a firm wa
 - How to setup mid point matters for the entire code due to indices (e.g. use length or length -1)
 - Think about the locations of pointers before and after moving while setting up the pointers using mid positions
 
-The fastest solution is almost the same as my solution, but I don't know why it runs way slower than the one.<br>
-`Array.sort((a,b)=>a-b)` was kind of a key to this solution because `sort()` doesn't apply to negative numbers by itself.<br>
+The fastest solution is almost the same as my solution, but I don't know why it runs way slower than the one.
+<br />
+`Array.sort((a,b)=>a-b)` was kind of a key to this solution because `sort()` doesn't apply to negative numbers by itself.
+<br />
 Another solution is to implement `sort()` with a custom function.
 
-### #3. Longest Substring Without Repeating Characters (12/29/2021)
+### #7. Reverse Integer
 
-Using `Set` was my solution, but the fastest solution using an array and slice method was brilliant.
+- convert to string
+- separate '-' if any exists and save it as prefix
+- do reversed for loop and concat each digits
+- remove zeros if any exists until it doesn't appear
+- concat with the prefix
+- convert to number
 
-### #2. Add Two Numbers
+### #8. String to Integer
 
-It was helpful to understand the question with knowing the ListNode in Java.<br>
-Using less functions will help to decrease the time it takes.
+JS file runs way faster then the TS one due to (probably) the unnecessary loops and conditionals; However, I left as it is (didn't amend it) to see my thought progress later in the future, one interesting thing is that actually later I could think of a better algorithm to solve it, and it went from 11% up to 80% faster runtime.
 
-### #1. Two Sum
-
-the fastest solutions and the popular ones are using Objects(HashMap style in Java) and one for-loop
-
-```
-
-```
+- trim input string
+- check if one of the signs (+, -) exists, assign it separately
+- loop and concat numbers including '0'
+  - 0 has to be handled separately while using `Boolean` and `Number` together, because 0 will throw false with Boolean causing unexpected behavior
+- if the number part is an empty string (= no number following), return 0
+- `Number(-000024)` for instance, will return `-24`. Therefore, there's no need to remove those front zeros before concatenate with signs if one exists, because `Number` function will automatically remove it for you
+- basic condition checks are not mentioned here
