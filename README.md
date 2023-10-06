@@ -1,12 +1,11 @@
-# One LeetCode problem A Day (JavaScript)
+# Solve LeetCode problems until you get a SWE job in Google (JS/TS/Python/C++)
+
+[![en](https://img.shields.io/badge/lang-EN-red.svg)](https://github.com/brandonwie/leetcode/blob/main/README.md)
+[![한국어](https://img.shields.io/badge/lang-한국어-green.svg)](https://github.com/brandonwie/leetcode/blob/main/README.ko-kr.md)
 
 ## #1. Two Sum
 
 the fastest solutions and the popular ones are using Objects(HashMap style in Java) and one for-loop
-
-```
-
-```
 
 ## #2. Add Two Numbers
 
@@ -22,9 +21,7 @@ Using `Set` was my solution, but the fastest solution using an array and slice m
 took 3 days to fully understand (still need more time to understand in a firm way)
 (update 01/01/2022)
 
-<br />
-
-## #6. Zigzag Converstion
+## #6. Zigzag Conversion
 
 - more dislikes than likes : I wonder why 🤷🏻‍♂️... not for real use-cases?
 - this problem was tricky because I had to draw the zigzag with given strings to find patterns (well frankly, I got the answer from [YouTube](https://www.youtube.com/watch?v=Q2Tw6gcVEwc&t=456s&ab_channel=NeetCode))
@@ -46,9 +43,9 @@ took 3 days to fully understand (still need more time to understand in a firm wa
 - Think about the locations of pointers before and after moving while setting up the pointers using mid positions
 
 The fastest solution is almost the same as my solution, but I don't know why it runs way slower than the one.
-<br />
+
 `Array.sort((a,b)=>a-b)` was kind of a key to this solution because `sort()` doesn't apply to negative numbers by itself.
-<br />
+
 Another solution is to implement `sort()` with a custom function.
 
 ## #7. Reverse Integer
@@ -73,3 +70,13 @@ JS file runs way faster then the TS one due to (probably) the unnecessary loops 
 - basic condition checks are not mentioned here
 
 ## #9. Palindrome Number
+
+1. solving with string: need two pointers from the start and the end of the string, and compare each char until they meet in the middle (O(n) time complexity)
+1. solving with number `x`:
+   1. set the divider as 1, multiply by 10 while it's smaller or equal to the number's digit'
+   2. get the left most digit by dividing the number by the divider
+   3. get the right most digit by getting the remainder of the number divided by 10
+   4. compare those two digits, if not equal, return `false`
+   5. remove the two digits you've used by getting the remainder of the number divided by the divider, and divide the remainder by 10 and round it down
+   6. `x` will be 0 at the end, exit the loop, return `true`
+   7. the time complexity is the same as the string solution, O(n)
