@@ -1,4 +1,4 @@
-# Google 가는 그 날까지 Leetcode 열심히 풀기 (JS/TS/Python/C++)
+# Leetcode 문제 풀기 (JS/TS/Python/C++)
 
 [![en](https://img.shields.io/badge/lang-EN-red.svg)](https://github.com/brandonwie/leetcode/blob/main/README.md)
 [![한국어](https://img.shields.io/badge/lang-한국어-green.svg)](https://github.com/brandonwie/leetcode/blob/main/README.ko-kr.md)

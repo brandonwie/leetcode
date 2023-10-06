@@ -1,4 +1,4 @@
-# Solve LeetCode problems until you get a SWE job in Google (JS/TS/Python/C++)
+# Solve LeetCode problems (JS/TS/Python/C++)
 
 [![en](https://img.shields.io/badge/lang-EN-red.svg)](https://github.com/brandonwie/leetcode/blob/main/README.md)
 [![한국어](https://img.shields.io/badge/lang-한국어-green.svg)](https://github.com/brandonwie/leetcode/blob/main/README.ko-kr.md)
