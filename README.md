@@ -3,26 +3,26 @@
 [![en](https://img.shields.io/badge/lang-EN-red.svg)](https://github.com/brandonwie/leetcode/blob/main/README.md)
 [![한국어](https://img.shields.io/badge/lang-한국어-green.svg)](https://github.com/brandonwie/leetcode/blob/main/README.ko-kr.md)
 
-## [#1. [EASY] Two Sum](https://github.com/brandonwie/leetcode/blob/main/001__two-sum.js)
+## [1. (easy) Two Sum](https://github.com/brandonwie/leetcode/blob/main/001__two-sum.js)
 
 the fastest solutions and the popular ones are using Objects(HashMap style in Java) and one for-loop
 
-## [#2. [MEDIUM] Add Two Numbers](https://github.com/brandonwie/leetcode/blob/main/002__add-two-numbers.js)
+## [2. (medium) Add Two Numbers](https://github.com/brandonwie/leetcode/blob/main/002__add-two-numbers.js)
 
 It was helpful to understand the question with knowing the ListNode in Java.
 
 Using less functions will help to decrease the time it takes.
 
-## [#3. [MEDIUM] Longest Substring Without Repeating Characters](https://github.com/brandonwie/leetcode/blob/main/003__longest-substring.js)
+## [3. (medium) Longest Substring Without Repeating Characters](https://github.com/brandonwie/leetcode/blob/main/003__longest-substring.js)
 
 Using `Set` was my solution, but the fastest solution using an array and slice method was brilliant.
 
-## [#4. [HARD] Median of Two Sorted arrays](https://github.com/brandonwie/leetcode/blob/main/004__median-of-two-sorted-arrays.js)
+## [#. (hard) Median of Two Sorted arrays](https://github.com/brandonwie/leetcode/blob/main/004__median-of-two-sorted-arrays.js)
 
 took 3 days to fully understand (still need more time to understand in a firm way)
 (update 01/01/2022)
 
-## [#6. [MEDIUM] Zigzag Conversion](https://github.com/brandonwie/leetcode/blob/main/006__zigzag-conversion.ts)
+## [6. (medium) Zigzag Conversion](https://github.com/brandonwie/leetcode/blob/main/006__zigzag-conversion.ts)
 
 - more dislikes than likes : I wonder why 🤷🏻‍♂️... not for real use-cases?
 - this problem was tricky because I had to draw the zigzag with given strings to find patterns (well frankly, I got the answer from [YouTube](https://www.youtube.com/watch?v=Q2Tw6gcVEwc&t=456s&ab_channel=NeetCode))
@@ -49,7 +49,7 @@ The fastest solution is almost the same as my solution, but I don't know why it 
 
 Another solution is to implement `sort()` with a custom function.
 
-## [#7. [MEDIUM] Reverse Integer](https://github.com/brandonwie/leetcode/blob/main/007__reverse-integer.js)
+## [7. (medium) Reverse Integer](https://github.com/brandonwie/leetcode/blob/main/007__reverse-integer.js)
 
 - convert to string
 - separate '-' if any exists and save it as prefix
@@ -58,7 +58,7 @@ Another solution is to implement `sort()` with a custom function.
 - concat with the prefix
 - convert to number
 
-## [#8. [MEDIUM] String to Integer](https://github.com/brandonwie/leetcode/blob/main/008__string-to-integer.js)
+## [8. (medium) String to Integer](https://github.com/brandonwie/leetcode/blob/main/008__string-to-integer.js)
 
 JS file runs way faster then the TS one due to (probably) the unnecessary loops and conditionals; However, I left as it is (didn't amend it) to see my thought progress later in the future, one interesting thing is that actually later I could think of a better algorithm to solve it, and it went from 11% up to 80% faster runtime.
 
@@ -70,7 +70,7 @@ JS file runs way faster then the TS one due to (probably) the unnecessary loops 
 - `Number(-000024)` for instance, will return `-24`. Therefore, there's no need to remove those front zeros before concatenate with signs if one exists, because `Number` function will automatically remove it for you
 - basic condition checks are not mentioned here
 
-## [#9. [EASY] Palindrome Number](https://github.com/brandonwie/leetcode/blob/main/009__palindrome-number.js)
+## [9. (easy) Palindrome Number](https://github.com/brandonwie/leetcode/blob/main/009__palindrome-number.js)
 
 1. solving with string: need two pointers from the start and the end of the string, and compare each char until they meet in the middle (O(n) time complexity)
 1. solving with number `x`:
