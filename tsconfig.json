@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "CommonJS",
+    "isolatedModules": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,

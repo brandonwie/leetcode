@@ -1,13 +1,6 @@
 # One LeetCode problem A Day (JavaScript)
 
-## Disclaimer
-
-- Not sure if I can keep "two LeetCode problems per week", but I will do my best.
-- This repo will not only contain my solutions, but also solutions that meet my preferences, or those are recorded as the fastest on LeetCode.
-- Hence, not all solutions are mine, and I will leave comments if it's not solely mine.
-- `README.md` wil be written in 'lastest to earliest' order
-
-### #1. Two Sum
+## #1. Two Sum
 
 the fastest solutions and the popular ones are using Objects(HashMap style in Java) and one for-loop
 
@@ -15,23 +8,23 @@ the fastest solutions and the popular ones are using Objects(HashMap style in Ja
 
 ```
 
-### #2. Add Two Numbers
+## #2. Add Two Numbers
 
 It was helpful to understand the question with knowing the ListNode in Java.<br>
 Using less functions will help to decrease the time it takes.
 
-### #3. Longest Substring Without Repeating Characters (12/29/2021)
+## #3. Longest Substring Without Repeating Characters (12/29/2021)
 
 Using `Set` was my solution, but the fastest solution using an array and slice method was brilliant.
 
-### #4. [HARD] Median of Two Sorted arrays (12/30/2021)
+## #4. [HARD] Median of Two Sorted arrays (12/30/2021)
 
 took 3 days to fully understand (still need more time to understand in a firm way)
 (update 01/01/2022)
 
 <br />
 
-### #6. Zigzag Converstion
+## #6. Zigzag Converstion
 
 - more dislikes than likes : I wonder why 🤷🏻‍♂️... not for real use-cases?
 - this problem was tricky because I had to draw the zigzag with given strings to find patterns (well frankly, I got the answer from [YouTube](https://www.youtube.com/watch?v=Q2Tw6gcVEwc&t=456s&ab_channel=NeetCode))
@@ -44,9 +37,7 @@ took 3 days to fully understand (still need more time to understand in a firm wa
   - `i + increment - (2 * row)`: go back `2 * row` from the next ZIG line char to get to the ZAG lien char
 - You'll get the idea if you actually draw a zigzag pattern that has 4 rows using a random string (at least with 13-15 chars)
 
-### TODO notes for longest palindrome question
-
-#### important things
+### important things
 
 - Use smaller array (if exists) to move pointers less
 - Concept of left/right pointers on smaller array (left pointer only move to the right and vice-versa)
@@ -60,7 +51,7 @@ The fastest solution is almost the same as my solution, but I don't know why it 
 <br />
 Another solution is to implement `sort()` with a custom function.
 
-### #7. Reverse Integer
+## #7. Reverse Integer
 
 - convert to string
 - separate '-' if any exists and save it as prefix
@@ -69,7 +60,7 @@ Another solution is to implement `sort()` with a custom function.
 - concat with the prefix
 - convert to number
 
-### #8. String to Integer
+## #8. String to Integer
 
 JS file runs way faster then the TS one due to (probably) the unnecessary loops and conditionals; However, I left as it is (didn't amend it) to see my thought progress later in the future, one interesting thing is that actually later I could think of a better algorithm to solve it, and it went from 11% up to 80% faster runtime.
 
@@ -80,3 +71,5 @@ JS file runs way faster then the TS one due to (probably) the unnecessary loops 
 - if the number part is an empty string (= no number following), return 0
 - `Number(-000024)` for instance, will return `-24`. Therefore, there's no need to remove those front zeros before concatenate with signs if one exists, because `Number` function will automatically remove it for you
 - basic condition checks are not mentioned here
+
+## #9. Palindrome Number
