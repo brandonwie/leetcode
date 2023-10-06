@@ -3,25 +3,24 @@
 [![en](https://img.shields.io/badge/lang-EN-red.svg)](https://github.com/brandonwie/leetcode/blob/main/README.md)
 [![한국어](https://img.shields.io/badge/lang-한국어-green.svg)](https://github.com/brandonwie/leetcode/blob/main/README.ko-kr.md)
 
-## #1. Two Sum
+## [#1. [EASY] Two Sum](https://github.com/brandonwie/leetcode/blob/main/001__two-sum.js)
 
 가장 빠른 해결책과 인기 있는 것들은 Java의 HashMap 스타일로 Objects와 한 번의 for-loop를 사용합니다.
 
-## #2. Add Two Numbers
+## [#2. [MEDIUM] Add Two Numbers](https://github.com/brandonwie/leetcode/blob/main/002__add-two-numbers.js)
 
 Java의 ListNode를 알고 있으면 문제를 이해하는 데 도움이 됩니다.
 함수의 사용을 줄이면 실행 시간이 단축됩니다.
 
-## #3. Longest Substring Without Repeating Characters (12/29/2021)
+## [#3. [MEDIUM] Longest Substring Without Repeating Characters](https://github.com/brandonwie/leetcode/blob/main/003__longest-substring.js)
 
 `Set`을 사용해 해결했지만, array의 slice방법을 사용하는 가장 빠른 해결책을 배웠어요.
 
-## #4. [HARD] Median of Two Sorted arrays (12/30/2021)
+## [#4. [HARD] Median of Two Sorted arrays](https://github.com/brandonwie/leetcode/blob/main/004__median-of-two-sorted-arrays.js)
 
 완전히 이해하는 데 3일이 걸렸습니다. (아직 확고하게 이해하기 위해 더 많은 시간이 필요합니다)
-(01/01/2022 업데이트)
 
-## #6. Zigzag Conversion
+## [#6. [MEDIUM] Zigzag Conversion](https://github.com/brandonwie/leetcode/blob/main/006__zigzag-conversion.ts)
 
 - 싫어요가 좋아요보다 많습니다 : 실제 사용 사례가 아닌 것 같아요 🤷🏻‍♂️
 - 이 문제는 주어진 문자열로 지그재그를 그려 패턴을 찾는 것이 까다로웠습니다. (솔직히, [YouTube](https://www.youtube.com/watch?v=Q2Tw6gcVEwc&t=456s&ab_channel=NeetCode)에서 답을 얻었습니다.)
@@ -48,7 +47,7 @@ Java의 ListNode를 알고 있으면 문제를 이해하는 데 도움이 됩니
 
 다른 해결책은 사용자 정의 함수로 `sort()`를 구현하는 것입니다.
 
-## #7. Reverse Integer
+## [#7. [MEDIUM] Reverse Integer](https://github.com/brandonwie/leetcode/blob/main/007__reverse-integer.js)
 
 - 문자열로 변환
 - '-'가 있으면 분리하고 접두사로 저장
@@ -57,7 +56,7 @@ Java의 ListNode를 알고 있으면 문제를 이해하는 데 도움이 됩니
 - 접두사와 연결
 - 숫자로 변환
 
-## #8. String to Integer
+## [#8. [MEDIUM] String to Integer](https://github.com/brandonwie/leetcode/blob/main/008__string-to-integer.js)
 
 JS 파일은 TS 파일보다 훨씬 빠르게 실행됩니다 (아마도 불필요한 루프와 조건문 때문일 것입니다); 그러나 나중에 내 생각의 진행을 보기 위해 그대로 두었습니다. 실제로 나중에 더 나은 알고리즘을 생각해냈고, 실행 시간이 11%에서 80% 더 빨라졌습니다.
 
@@ -69,7 +68,7 @@ JS 파일은 TS 파일보다 훨씬 빠르게 실행됩니다 (아마도 불필�
 - 예를 들어, `Number(-000024)`는 `-24`를 반환합니다. 따라서, 실제로 부호와 연결하기 전에 앞에 있는 0을 제거할 필요가 없습니다. 왜냐하면 `Number` 함수가 자동으로 제거해주기 때문입니다.
 - 여기에 언급되지 않은 기본 조건 확인이 있습니다.
 
-## #9. Palindrome Number
+## [#9. [EASY] Palindrome Number](https://github.com/brandonwie/leetcode/blob/main/009__palindrome-number.js)
 
 1. 문자열로 해결: 시작과 문자열의 끝에서 두 포인터가 필요하며, 중앙에서 만날 때까지 각 문자를 비교합니다 (시간 복잡도 O(n))
 1. 숫자 `x`에 대한 문제풀이:
