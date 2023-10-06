@@ -3,7 +3,7 @@
 [![en](https://img.shields.io/badge/lang-EN-red.svg)](https://github.com/brandonwie/leetcode/blob/main/README.md)
 [![한국어](https://img.shields.io/badge/lang-한국어-green.svg)](https://github.com/brandonwie/leetcode/blob/main/README.ko-kr.md)
 
-## #1. Two Sum
+## [https://github.com/brandonwie/leetcode/blob/main/001\_\_two-sum.js](#1.-Two-Sum)
 
 the fastest solutions and the popular ones are using Objects(HashMap style in Java) and one for-loop
 
