@@ -15,20 +15,21 @@ var fourSum = function (nums, target) {
   let res = [];
   let quad = [];
   function nSum(n, startIndex, target) {
-    if (n !== 2) {
+    //
+    if (n > 2) {
       for (let i = startIndex; i < nums.length - n + 1; i++) {
         if (i > startIndex && nums[i] == nums[i - 1]) {
           continue;
         }
         quad.push(nums[i]);
-        nSum(n - 1, i + 1, target - nums[i]);
+        nSum(n - 1, i + 1, target - nums[i]); // ends after when n = 2 and running the while loop below with two pointers
         quad.pop();
       }
       return;
     }
 
     // base case two sum II
-    let l = startIndex;
+    let l = startIndex; // because the startIndex will be i + 2 from the nSum fn above
     let r = nums.length - 1;
     while (l < r) {
       if (nums[l] + nums[r] < target) {
@@ -48,3 +49,5 @@ var fourSum = function (nums, target) {
   nSum(4, 0, target);
   return res;
 };
+
+fourSum([1, 0, -1, 0, -2, 2], 0);
