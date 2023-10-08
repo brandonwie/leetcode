@@ -81,3 +81,11 @@ JS file runs way faster then the TS one due to (probably) the unnecessary loops 
    5. remove the two digits you've used by getting the remainder of the number divided by the divider, and divide the remainder by 10 and round it down
    6. `x` will be 0 at the end, exit the loop, return `true`
    7. the time complexity is the same as the string solution, O(n)
+
+---
+
+## Following the Leetcode Patterns' order
+
+> [leetcode-patterns](https://seanprashad.com/leetcode-patterns/)
+
+## [217. Contains Duplicate (easy)](https://leetcode.com/problems/contains-duplicate/)
