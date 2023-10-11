@@ -89,3 +89,12 @@ JS file runs way faster then the TS one due to (probably) the unnecessary loops 
 > [leetcode-patterns](https://seanprashad.com/leetcode-patterns/)
 
 ## [217. Contains Duplicate (easy)](https://leetcode.com/problems/contains-duplicate/)
+
+### How to find duplicates
+
+- use a `Set` to store the values
+- if the value already exists in the `Set`, return `true`
+- otherwise add to the `Set`
+- return `false` if the loop ends
+
+> `.has` and `.add` are O(1) on average, so they don't change the overall linear complexity.
