@@ -88,7 +88,7 @@ JS file runs way faster then the TS one due to (probably) the unnecessary loops 
 
 > [leetcode-patterns](https://seanprashad.com/leetcode-patterns/)
 
-## [217. Contains Duplicate (easy)](https://leetcode.com/problems/contains-duplicate/)
+## [217. Contains Duplicate (easy)](https://github.com/brandonwie/leetcode/blob/main/leetcode-patterns/001_217-contains-duplicate)
 
 ### How to find duplicates
 
@@ -98,3 +98,8 @@ JS file runs way faster then the TS one due to (probably) the unnecessary loops 
 - return `false` if the loop ends
 
 > `.has` and `.add` are O(1) on average, so they don't change the overall linear complexity.
+
+## [268. Missing Number (easy)](https://github.com/brandonwie/leetcode/blob/main/leetcode-patterns/002_268-missing-number)
+
+- use `Gauss sum formula` $n(n+1)/2$
+- compare with current sum of the array
