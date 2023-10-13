@@ -101,5 +101,5 @@ JS file runs way faster then the TS one due to (probably) the unnecessary loops 
 
 ## [268. Missing Number (easy)](https://github.com/brandonwie/leetcode/blob/main/leetcode-patterns/002_268-missing-number.js)
 
-- use `Gauss sum formula` $n(n+1)/2$
+- use `Gauss sum formula` $\frac{n(n+1)}{2}$
 - compare with current sum of the array
