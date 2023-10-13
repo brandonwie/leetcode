@@ -103,3 +103,8 @@ JS file runs way faster then the TS one due to (probably) the unnecessary loops 
 
 - use `Gauss sum formula` $\frac{n(n+1)}{2}$
 - compare with current sum of the array
+
+## [448. Find All Numbers Disappeared in an Array (easy)](https://github.com/brandonwie/leetcode/blob/main/leetcode-patterns/003_448-find-all-numbers-disappeared-in-an-array.js)
+
+- loop through the array and use number elements to mark the matching indices as negative
+- loop once again and find the positive number, and push the index + 1 to the result array
