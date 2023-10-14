@@ -108,3 +108,7 @@ JS file runs way faster then the TS one due to (probably) the unnecessary loops 
 
 - loop through the array and use number elements to mark the matching indices as negative
 - loop once again and find the positive number, and push the index + 1 to the result array
+
+## [136. Single Number (easy)](https://github.com/brandonwie/leetcode/blob/main/leetcode-patterns/004_136-single-number.js)
+
+- use `XOR` operator
