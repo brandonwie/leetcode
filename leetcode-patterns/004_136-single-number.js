@@ -31,8 +31,6 @@ var singleNumber = function (nums) {
  * @return {number}
  */
 var singleNumber = function (nums) {
-  nums.reduce((acc, cur) => {
-    console.log(acc, cur, acc ^ cur);
-    return acc ^ cur;
-  });
+  // a ^ b ^ b = a
+  return nums.reduce((acc, cur, i) => acc ^ cur ^ i, nums.length);
 };

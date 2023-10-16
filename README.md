@@ -112,3 +112,4 @@ JS file runs way faster then the TS one due to (probably) the unnecessary loops 
 ## [136. Single Number (easy)](https://github.com/brandonwie/leetcode/blob/main/leetcode-patterns/004_136-single-number.js)
 
 - use `XOR` operator
+- or just substract the numbers in `nums` from current index (comparing the sums of the two different arrays, `nums` and `[0, n]`)

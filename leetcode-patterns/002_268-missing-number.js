@@ -3,60 +3,16 @@
 /**
  * @param {number[]} nums
  * @return {number}
- * @description simple for loop, but need to loop through n + 1 times
+ * @description XOR
  */
 var missingNumber = function (nums) {
-  // first element = range
-  let n = nums.length;
-  nums.sort((a, b) => a - b);
-  for (let i = 0; i <= n; i++) {
-    if (nums[i] !== i) {
-      return nums[i] - 1;
-    }
-    // if missing num is last num in range
-    if (nums[i] === undefined) {
-      return n;
-    }
+  // think of an imaginary array with all number from 0 to n (length n)
+  // nums array length is n - 1; therefore add the last number n and XOR all numbers in nums
+  let res = nums.length;
+  for (let i = 0; i < nums.length; i++) {
+    res += i - nums[i];
   }
-};
-
-/**
- * @param {number[]} nums
- * @return {number}
- * @description using two pointers
- */
-var missingNumber = function (nums) {
-  // 0 to range(nums.length)
-  let n = nums.length; // extract range
-  nums.sort((a, b) => a - b);
-  // first num check
-  if (nums[0] !== 0) return 0;
-  // last num check
-  if (nums[n - 1] !== n) return n;
-
-  let l = 0,
-    r = n - 1,
-    sum = n;
-
-  // missing num is in between
-  while (l < r) {
-    // set sum
-    if (nums[l] + nums[r] === sum) {
-      l++;
-      r--;
-    } else if (nums[l] + nums[r] > sum) {
-      return nums[l] - 1;
-    } else {
-      return nums[r] + 1;
-    }
-  }
-  if (l === r) {
-    // e.g. [0, 1, 3, 4, 5]
-    return sum - nums[l]; // can be r
-  } else {
-    // e.g. [0, 2] || [0, 1, 3, 4]
-    return (l + r) / 2;
-  }
+  return res;
 };
 
 /**
