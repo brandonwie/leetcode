@@ -3,26 +3,26 @@
 [![en](https://img.shields.io/badge/lang-EN-red.svg)](https://github.com/brandonwie/leetcode/blob/main/README.md)
 [![한국어](https://img.shields.io/badge/lang-한국어-green.svg)](https://github.com/brandonwie/leetcode/blob/main/README.ko-kr.md)
 
-## [1. Two Sum (easy)](https://github.com/brandonwie/leetcode/blob/main/001__two-sum.js)
+## [1. Two Sum (easy)](https://github.com/brandonwie/leetcode/blob/main/0001-two-sum.js)
 
 the fastest solutions and the popular ones are using Objects(HashMap style in Java) and one for-loop
 
-## [2. Add Two Numbers (medium)](https://github.com/brandonwie/leetcode/blob/main/002__add-two-numbers.js)
+## [2. Add Two Numbers (medium)](https://github.com/brandonwie/leetcode/blob/main/0002-add-two-numbers.js)
 
 It was helpful to understand the question with knowing the ListNode in Java.
 
 Using less functions will help to decrease the time it takes.
 
-## [3. Longest Substring Without Repeating Characters (medium)](https://github.com/brandonwie/leetcode/blob/main/003__longest-substring.js)
+## [3. Longest Substring Without Repeating Characters (medium)](https://github.com/brandonwie/leetcode/blob/main/0003-longest-substring.js)
 
 Using `Set` was my solution, but the fastest solution using an array and slice method was brilliant.
 
-## [4. Median of Two Sorted arrays (hard)](https://github.com/brandonwie/leetcode/blob/main/004__median-of-two-sorted-arrays.js)
+## [4. Median of Two Sorted arrays (hard)](https://github.com/brandonwie/leetcode/blob/main/0004-median-of-two-sorted-arrays.js)
 
 took 3 days to fully understand (still need more time to understand in a firm way)
 (update 01/01/2022)
 
-## [6. Zigzag Conversion (medium)](https://github.com/brandonwie/leetcode/blob/main/006__zigzag-conversion.ts)
+## [6. Zigzag Conversion (medium)](https://github.com/brandonwie/leetcode/blob/main/0006-zigzag-conversion.ts)
 
 - more dislikes than likes : I wonder why 🤷🏻‍♂️... not for real use-cases?
 - this problem was tricky because I had to draw the zigzag with given strings to find patterns (well frankly, I got the answer from [YouTube](https://www.youtube.com/watch?v=Q2Tw6gcVEwc&t=456s&ab_channel=NeetCode))
@@ -49,7 +49,7 @@ The fastest solution is almost the same as my solution, but I don't know why it 
 
 Another solution is to implement `sort()` with a custom function.
 
-## [7. Reverse Integer (medium)](https://github.com/brandonwie/leetcode/blob/main/007__reverse-integer.js)
+## [7. Reverse Integer (medium)](https://github.com/brandonwie/leetcode/blob/main/0007-reverse-integer.js)
 
 - convert to string
 - separate '-' if any exists and save it as prefix
@@ -58,7 +58,7 @@ Another solution is to implement `sort()` with a custom function.
 - concat with the prefix
 - convert to number
 
-## [8. String to Integer (medium)](https://github.com/brandonwie/leetcode/blob/main/008__string-to-integer.js)
+## [8. String to Integer (medium)](https://github.com/brandonwie/leetcode/blob/main/0008-string-to-integer.js)
 
 JS file runs way faster then the TS one due to (probably) the unnecessary loops and conditionals; However, I left as it is (didn't amend it) to see my thought progress later in the future, one interesting thing is that actually later I could think of a better algorithm to solve it, and it went from 11% up to 80% faster runtime.
 
