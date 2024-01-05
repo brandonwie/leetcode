@@ -70,7 +70,7 @@ JS file runs way faster then the TS one due to (probably) the unnecessary loops 
 - `Number(-000024)` for instance, will return `-24`. Therefore, there's no need to remove those front zeros before concatenate with signs if one exists, because `Number` function will automatically remove it for you
 - basic condition checks are not mentioned here
 
-## [9. Palindrome Number (easy)](https://github.com/brandonwie/leetcode/blob/main/009__palindrome-number.js)
+## [9. Palindrome Number (easy)](https://github.com/brandonwie/leetcode/blob/main/0009-palindrome-number.js)
 
 1. solving with string: need two pointers from the start and the end of the string, and compare each char until they meet in the middle (O(n) time complexity)
 1. solving with number `x`:
@@ -88,7 +88,7 @@ JS file runs way faster then the TS one due to (probably) the unnecessary loops 
 
 > [leetcode-patterns](https://seanprashad.com/leetcode-patterns/)
 
-## [217. Contains Duplicate (easy)](https://github.com/brandonwie/leetcode/blob/main/leetcode-patterns/001_217-contains-duplicate.js)
+## [217. Contains Duplicate (easy)](https://github.com/brandonwie/leetcode/blob/main/leetcode-patterns/001-0217-contains-duplicate.js)
 
 ### How to find duplicates
 
@@ -99,17 +99,17 @@ JS file runs way faster then the TS one due to (probably) the unnecessary loops 
 
 > `.has` and `.add` are O(1) on average, so they don't change the overall linear complexity.
 
-## [268. Missing Number (easy)](https://github.com/brandonwie/leetcode/blob/main/leetcode-patterns/002_268-missing-number.js)
+## [268. Missing Number (easy)](https://github.com/brandonwie/leetcode/blob/main/leetcode-patterns/002-0268-missing-number.js)
 
 - use `Gauss sum formula` $\frac{n(n+1)}{2}$
 - compare with current sum of the array
 
-## [448. Find All Numbers Disappeared in an Array (easy)](https://github.com/brandonwie/leetcode/blob/main/leetcode-patterns/003_448-find-all-numbers-disappeared-in-an-array.js)
+## [448. Find All Numbers Disappeared in an Array (easy)](https://github.com/brandonwie/leetcode/blob/main/leetcode-patterns/003-0448-find-all-numbers-disappeared-in-an-array.js)
 
 - loop through the array and use number elements to mark the matching indices as negative
 - loop once again and find the positive number, and push the index + 1 to the result array
 
-## [136. Single Number (easy)](https://github.com/brandonwie/leetcode/blob/main/leetcode-patterns/004_136-single-number.js)
+## [136. Single Number (easy)](https://github.com/brandonwie/leetcode/blob/main/leetcode-patterns/004-0136-single-number.js)
 
 - use `XOR` operator
 - or just substract the numbers in `nums` from current index (comparing the sums of the two different arrays, `nums` and `[0, n]`)
