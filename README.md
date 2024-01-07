@@ -1,7 +1,10 @@
-# Solve LeetCode problems (JS/TS/Python/C++)
+# LeetCode problems (JS/TS/Python/C++)
 
-[![en](https://img.shields.io/badge/lang-EN-red.svg)](https://github.com/brandonwie/leetcode/blob/main/README.md)
-[![한국어](https://img.shields.io/badge/lang-한국어-green.svg)](https://github.com/brandonwie/leetcode/blob/main/README.ko-kr.md)
+> There are two ways I follow to solve the problems.</br>
+> First, [Leetcode Patterns](https://seanprashad.com/leetcode-patterns/)</br>
+> Second, [NeetCode's Roadmap](https://neetcode.io/roadmap)
+
+Currently I'm using the NeetCode's roadmap because it is more categorized for me to understand the concepts more gradually.
 
 ## [1. Two Sum (easy)](https://github.com/brandonwie/leetcode/blob/main/0001-two-sum.js)
 
