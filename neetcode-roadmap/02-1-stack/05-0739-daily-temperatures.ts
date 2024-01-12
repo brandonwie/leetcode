@@ -26,18 +26,15 @@ function dailyTemperatures(temperatures: number[]): number[] {
       stack.length &&
       temperatures[i] >= temperatures[stack[stack.length - 1]]
     ) {
-      console.log(`right before pop: ${stack}`);
       stack.pop();
     }
 
     // if exist, the index of the next warmer temperature is the top of the stack
     if (stack.length) {
       res[i] = stack[stack.length - 1] - i;
-      console.log({ res }, ' at ', 'index: ', i);
     }
 
     stack.push(i);
-    console.log({ stack });
   }
 
   return res;
