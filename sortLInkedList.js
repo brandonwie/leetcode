@@ -61,3 +61,5 @@ function merge(l1, l2) {
 
   return temp.next;
 }
+
+let date = ['0620'];
